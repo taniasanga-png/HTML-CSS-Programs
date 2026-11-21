@@ -1,0 +1,19 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#f3f4f6;padding-bottom:80px}
+/* STICKY: stays at top while scrolling */
+header{position:sticky;top:0;background:#1e3a8a;color:#fff;padding:15px 30px;z-index:100}
+section{max-width:900px;margin:30px auto;padding:25px;background:#fff;border-radius:10px}
+h2{color:#1e3a8a;margin-bottom:12px}
+.box{padding:15px;border-radius:8px;color:#fff;margin:10px 0;width:300px}
+/* STATIC: default flow */
+.static{position:static;background:#6b7280}
+/* RELATIVE: shifted from its normal place */
+.relative{position:relative;left:40px;top:10px;background:#2563eb}
+/* ABSOLUTE: positioned inside nearest positioned parent */
+.parent{position:relative;height:200px;background:#e0e7ff;border:2px dashed #7c3aed}
+.absolute{position:absolute;top:20px;right:20px;width:200px;background:#7c3aed}
+.badge{position:absolute;bottom:10px;left:10px;background:#dc2626;color:#fff;padding:4px 10px;border-radius:20px;font-size:.8rem}
+/* FIXED: fixed to the viewport */
+.chat{position:fixed;bottom:20px;right:20px;background:#059669;color:#fff;padding:14px 20px;border-radius:30px;text-decoration:none;z-index:200;box-shadow:0 4px 10px rgba(0,0,0,.3)}
+.chat:hover{background:#047857}
+.filler{height:600px;background:linear-gradient(#fff,#ddd6fe)}

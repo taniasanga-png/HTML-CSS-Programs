@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>NeuraEdge AI | Topic 10: API Integration</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>NeuraEdge AI</h1><p>Client Directory (live data from API)</p></header>
+<section class="wrap">
+  <div class="toolbar">
+    <button id="loadBtn">Load Clients</button>
+    <button id="errorBtn" class="danger">Simulate Error</button>
+  </div>
+  <div id="loader" class="loader" hidden></div>
+  <p id="status">Click "Load Clients" to fetch data.</p>
+  <div id="summary" class="summary"></div>
+  <div class="table-box">
+    <table>
+      <thead><tr><th>ID</th><th>Name</th><th>Company</th><th>Email</th><th>City</th></tr></thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+</section>
+<footer>&copy; 2026 NeuraEdge AI</footer>
+<script src="script.js"></script>
+</body></html>

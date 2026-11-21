@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>NeuraEdge AI | Topic 12: Interactive Component</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>NeuraEdge AI</h1><p>AI Solutions Explorer</p></header>
+<section class="wrap">
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search solutions...">
+    <select id="industry">
+      <option value="all">All Industries</option><option>Retail</option><option>Healthcare</option><option>Manufacturing</option>
+    </select>
+  </div>
+  <div class="tabs" id="tabs">
+    <button class="tab active" data-cat="all">All</button>
+    <button class="tab" data-cat="Chatbot">Chatbots</button>
+    <button class="tab" data-cat="Vision">Vision</button>
+    <button class="tab" data-cat="Analytics">Analytics</button>
+  </div>
+  <p id="count"></p>
+  <div id="grid" class="grid"></div>
+  <div id="detail" class="detail" hidden><h3></h3><p></p></div>
+</section>
+<section class="wrap">
+  <h2>FAQ</h2>
+  <details><summary>How long does deployment take?</summary><p>Most projects go live in 4 to 8 weeks.</p></details>
+  <details><summary>Do you offer support after launch?</summary><p>Yes, every plan includes monitoring and updates.</p></details>
+  <details><summary>Is my data secure?</summary><p>All data is encrypted and never used to train other clients' models.</p></details>
+</section>
+<footer>&copy; 2026 NeuraEdge AI</footer>
+<script src="script.js"></script>
+</body></html>

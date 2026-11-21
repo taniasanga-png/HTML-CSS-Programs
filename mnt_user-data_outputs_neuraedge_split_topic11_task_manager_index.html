@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>NeuraEdge AI | Topic 11: Task Manager (CRUD)</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>NeuraEdge AI</h1><p>AI Project Task Manager</p></header>
+<section class="wrap">
+  <h2 id="formTitle">Add New Task</h2>
+  <form id="taskForm">
+    <input type="text" id="title" placeholder="Task title (e.g. Train chatbot model)" required>
+    <textarea id="desc" rows="2" placeholder="Description"></textarea>
+    <select id="priority"><option>Low</option><option selected>Medium</option><option>High</option></select>
+    <select id="status"><option>Pending</option><option>In Progress</option><option>Completed</option></select>
+    <button type="submit" id="saveBtn">Add Task</button>
+    <button type="button" id="cancelBtn" class="gray" hidden>Cancel</button>
+  </form>
+</section>
+<section class="wrap">
+  <div class="top">
+    <h2>Task List</h2>
+    <select id="filter"><option value="All">All</option><option>Pending</option><option>In Progress</option><option>Completed</option></select>
+  </div>
+  <ul id="counts" class="counts"></ul>
+  <div class="table-box">
+    <table><thead><tr><th>Title</th><th>Priority</th><th>Status</th><th>Actions</th></tr></thead>
+    <tbody id="tbody"></tbody></table>
+  </div>
+</section>
+<footer>&copy; 2026 NeuraEdge AI</footer>
+<script src="script.js"></script>
+</body></html>

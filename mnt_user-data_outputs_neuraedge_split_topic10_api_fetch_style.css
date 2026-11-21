@@ -1,0 +1,22 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',Arial,sans-serif;line-height:1.6;background:#f3f4f6;color:#1f2937}
+header{background:linear-gradient(135deg,#1e3a8a,#7c3aed);color:#fff;text-align:center;padding:30px 20px}
+footer{background:#111827;color:#9ca3af;text-align:center;padding:18px;margin-top:30px}
+.wrap{max-width:900px;margin:25px auto;padding:25px;background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+button{cursor:pointer;border:0;border-radius:6px;padding:10px 20px;background:#7c3aed;color:#fff;font-size:1rem;transition:.3s}
+button:hover{background:#1e3a8a}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:15px}
+.danger{background:#dc2626}
+.loader{width:40px;height:40px;margin:15px auto;border:5px solid #ddd6fe;border-top-color:#7c3aed;border-radius:50%;animation:spin 1s linear infinite}
+.loader[hidden]{display:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+#status{margin:10px 0;font-weight:600}
+#status.error{color:#dc2626;background:#fef2f2;border:1px solid #dc2626;padding:10px;border-radius:6px}
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:15px}
+.stat{border:1px solid #c7d2fe;border-radius:8px;padding:12px;text-align:center;background:#eef2ff}
+.stat strong{display:block;font-size:1.6rem;color:#1e3a8a}
+.table-box{overflow-x:auto;border:1px solid #e5e7eb;border-radius:8px}
+table{width:100%;border-collapse:collapse;min-width:600px}
+th{background:#1e3a8a;color:#fff}
+th,td{padding:10px;border-bottom:1px solid #e5e7eb;text-align:left}
+tbody tr:hover{background:#ede9fe}
